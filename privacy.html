@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eddalore Privacy Policy</title>
+<meta name="description" content="How the Eddalore audiobook player handles information. It collects none and has no Internet permission.">
+<style>
+  /* System fonts only: a privacy policy should not make the reader's browser contact a font host. */
+  :root {
+    --bg: #F6F7F9; --surface: #FFFFFF; --ink: #16191D; --ink-2: #4A5561; --line: #D5DBE1;
+    --accent: #1456B8; --note-bg: #FFF4D6; --note-line: #E0B43A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0F1215; --surface: #171B20; --ink: #E8ECEF; --ink-2: #A2ADB8; --line: #2C343C;
+            --accent: #7DB8FF; --note-bg: #2B2410; --note-line: #8A6D14; color-scheme: dark; }
+  }
+  html { background: var(--bg); }
+  body { margin: 0; color: var(--ink); background: var(--bg);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 46rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2.2rem 0 .5rem; padding-top: .4rem; border-top: 1px solid var(--line); }
+  p, ul { margin: .6rem 0; }
+  ul { padding-left: 1.3rem; }
+  li { margin: .3rem 0; }
+  a { color: var(--accent); }
+  .meta { color: var(--ink-2); margin: 0 0 1.5rem; }
+  .box { background: var(--note-bg); border: 1px solid var(--note-line); border-radius: 8px; padding: .8rem 1rem; margin: 1.2rem 0; }
+  .scroll { overflow-x: auto; margin: 1rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 34rem; background: var(--surface); }
+  th, td { text-align: left; vertical-align: top; padding: .55rem .7rem; border: 1px solid var(--line); font-size: .93rem; }
+  th { font-weight: 600; background: color-mix(in srgb, var(--line) 35%, var(--surface)); }
+  nav { margin-bottom: 1.2rem; font-size: .93rem; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  @media print { body { background: #fff; color: #000; } a { color: #000; } }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="index.html">Legal</a> &middot; <a href="terms.html">Terms of use</a> &middot; <a href="licenses.html">Open-source notices</a></nav>
+
+  <h1>Eddalore Privacy Policy</h1>
+  <p class="meta">Effective 9 October 2026 &middot; Applies to the Eddalore Android app, every version</p>
+
+  <p>Eddalore is an offline audiobook player. It is published by <strong>MakeSense Embedded Systems</strong>, South Africa
+  ("we", "us"). Because Eddalore does not collect personal information, this policy mostly describes what the app keeps on your own
+  phone and what it never does. We are the responsible party under the South African Protection of Personal Information Act (POPIA)
+  for anything it would handle.</p>
+
+  <div class="box"><strong>The short version.</strong> Eddalore does not collect, send, sell or share any personal information. There is
+  no account, no advertising, no analytics, no crash reporting and no tracking. The app does not even have Android's Internet permission,
+  so Android does not let it connect to the internet. Everything it remembers stays on your phone.</div>
+
+  <h2>1. What the app handles</h2>
+  <p>All of the following is processed <strong>only on your phone</strong>:</p>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Information</th><th>What it is</th><th>Why the app needs it</th></tr></thead>
+    <tbody>
+      <tr><td>Your audiobook folder</td><td>The folder you pick with Android's system folder picker, and the audio files and pictures inside it. The app gets read access to that one folder. It reads file names, the tags inside the files (title, author, length, chapter marks, embedded cover art) and cover pictures such as <code>cover.jpg</code>. Your files are never copied off the phone, uploaded or changed.</td><td>To list your books and play them.</td></tr>
+      <tr><td>Your library</td><td>The list of books, the folders you picked, where you stopped in each book, bookmarks, chapter lists, and finished or removed marks.</td><td>So you can carry on where you left off.</td></tr>
+      <tr><td>Cover thumbnails</td><td>Small copies of cover pictures.</td><td>To show covers quickly.</td></tr>
+      <tr><td>Your settings</td><td>Playback speed and volume boost.</td><td>So the app remembers your choices.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>This information is kept in the app's private storage on your phone. We never receive it.</p>
+  <p><strong>We do not collect:</strong> your name or email address, advertising identifiers, contacts, photos, camera or microphone data, your location, or anything about other apps on your phone. The app does not include advertising or analytics software.</p>
+
+  <h2>2. Permissions the app asks for</h2>
+  <ul>
+    <li><strong>Notifications:</strong> to show the playback controls (pause, previous and next chapter, bookmark, undo jump) in the notification shade and on the lock screen. You can turn them off in your phone's settings.</li>
+    <li><strong>Foreground service for media playback:</strong> so your book keeps playing when you leave the app, turn the screen off or drive.</li>
+    <li><strong>Wake lock:</strong> to keep playing with the screen off.</li>
+    <li><strong>Vibrate:</strong> a short buzz when a bookmark is saved, or when shaking your phone gives the sleep timer another round.</li>
+    <li><strong>Modify audio settings:</strong> for the optional volume boost, an audio effect applied to Eddalore's own sound only.</li>
+    <li><strong>Network state:</strong> added by Android's media playback library so it can tell what kind of connection exists. The app has no Internet permission and makes no network connections.</li>
+  </ul>
+  <p>The sleep timer's "shake to extend" feature reads your phone's motion sensor while the timer is about to run out. The readings are used on the spot to detect a shake and are never stored or sent anywhere.</p>
+
+  <h2>3. Who else handles your information</h2>
+  <p>No one, through the app. Eddalore contains no software from advertising, analytics, social or crash-reporting companies, and it cannot send anything off your phone.</p>
+  <ul>
+    <li><strong>Google Play</strong> distributes the app. Google handles your download and its own records of it.</li>
+    <li><strong>Android Auto and Bluetooth car stereos, and your lock screen.</strong> When you use them, the app tells Android what is playing (book title, author, chapter, cover picture, position) through Android's standard media system, so it can be shown there and the buttons work. That information stays between your phone and the screen or car you connected. Android Auto is a Google product and is covered by Google's own policies.</li>
+    <li><strong>Android device backup.</strong> Eddalore allows Android's own backup. If you have device backup switched on, Android may include the app's private data (the library list, positions, bookmarks and settings, never your audio files) in your Google account backup. That is an Android and Google feature that we cannot see or reach. You can switch it off in your phone's system settings.</li>
+  </ul>
+  <p>We may disclose information if the law requires it, but we hold none about you.</p>
+
+  <h2>4. How long it is kept</h2>
+  <ul>
+    <li><strong>On your phone:</strong> until you remove it, as described below.</li>
+    <li><strong>With us:</strong> nothing, because we receive nothing.</li>
+  </ul>
+
+  <h2>5. Deleting your data</h2>
+  <p>There is no account to delete. To remove what the app keeps on your phone:</p>
+  <ul>
+    <li><strong>Remove from library</strong> (in the book's menu) hides that book and stops rescans from adding it back. Its saved place stays on the phone, so the book can be restored.</li>
+    <li><strong>Clear storage</strong> or <strong>Uninstall</strong>, in Android's app settings, removes everything the app saved: library, saved places, bookmarks, cover thumbnails and settings. It also ends the app's access to your audiobook folder.</li>
+  </ul>
+  <p>Because we hold no copy of your data, there is nothing for us to delete on request.</p>
+
+  <h2>6. Your rights</h2>
+  <p>You may ask us to tell you what personal information we hold about you, to correct it, or to delete it, and you may object to its processing. We hold none, but you are welcome to ask. Write to us at <a href="mailto:makesense@gmail.com">makesense@gmail.com</a>. We reply within 30 days.</p>
+  <p>If you are not satisfied, you can complain to South Africa's Information Regulator at <a href="https://inforegulator.org.za">inforegulator.org.za</a>. People in other countries have similar rights under laws such as the EU's GDPR and California's CCPA; the same answer applies.</p>
+
+  <h2>7. Security</h2>
+  <p>The app's data sits in Android's private app storage, which other apps cannot read, and the app can only read the folder you gave it. Because the app has no Internet permission, it cannot send information anywhere. No system is perfectly secure; keep your phone locked and up to date.</p>
+
+  <h2>8. Children</h2>
+  <p>Eddalore is not directed at children under 18, and we do not knowingly collect their information. It collects no personal information from anyone.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>If we change this policy we will update the date at the top. If a future version of the app ever gains a feature that touches the internet, we will update this policy before that version is released and say so in the release notes. The current version is always at <a href="https://jannieduiwel.github.io/eddalore-legal/privacy.html">jannieduiwel.github.io/eddalore-legal/privacy.html</a>.</p>
+
+  <h2>10. Contact</h2>
+  <p>MakeSense Embedded Systems, South Africa<br>
+  Email: <a href="mailto:makesense@gmail.com">makesense@gmail.com</a></p>
+</main>
+</body>
+</html>

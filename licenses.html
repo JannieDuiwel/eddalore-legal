@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eddalore open-source notices</title>
+<meta name="description" content="The free software Eddalore is built with, and its licences.">
+<style>
+  /* System fonts only, no external requests. */
+  :root {
+    --bg: #F6F7F9; --surface: #FFFFFF; --ink: #16191D; --ink-2: #4A5561; --line: #D5DBE1;
+    --accent: #1456B8; --note-bg: #FFF4D6; --note-line: #E0B43A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0F1215; --surface: #171B20; --ink: #E8ECEF; --ink-2: #A2ADB8; --line: #2C343C;
+            --accent: #7DB8FF; --note-bg: #2B2410; --note-line: #8A6D14; color-scheme: dark; }
+  }
+  html { background: var(--bg); }
+  body { margin: 0; color: var(--ink); background: var(--bg);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 46rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .25rem; }
+  p, ul { margin: .6rem 0; }
+  ul { padding-left: 1.3rem; }
+  li { margin: .3rem 0; }
+  a { color: var(--accent); }
+  .meta { color: var(--ink-2); margin: 0 0 1.5rem; }
+  .scroll { overflow-x: auto; margin: 1rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 34rem; background: var(--surface); }
+  th, td { text-align: left; vertical-align: top; padding: .55rem .7rem; border: 1px solid var(--line); font-size: .93rem; }
+  th { font-weight: 600; background: color-mix(in srgb, var(--line) 35%, var(--surface)); }
+  nav { margin-bottom: 1.2rem; font-size: .93rem; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  @media print { body { background: #fff; color: #000; } a { color: #000; } }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="index.html">Legal</a> &middot; <a href="privacy.html">Privacy policy</a> &middot; <a href="terms.html">Terms of use</a></nav>
+
+  <h1>Eddalore open-source notices</h1>
+  <p class="meta">Versions are those in Eddalore 1.2.1</p>
+
+  <p>Eddalore is built with the free software below. Thank you to everyone who makes and maintains it.</p>
+
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Component</th><th>Version</th><th>Licence</th></tr></thead>
+    <tbody>
+      <tr><td>Kotlin standard library and kotlinx.coroutines (core, Android, Guava)</td><td>Kotlin 2.4.20, coroutines 1.10.2</td><td>Apache License 2.0</td></tr>
+      <tr><td>Jetpack Compose (UI, foundation, animation, runtime, Material 3, Material icons)</td><td>BOM 2025.10.01 (UI 1.9.4, Material 3 1.4.0)</td><td>Apache License 2.0</td></tr>
+      <tr><td>AndroidX Activity, Core, Lifecycle, SavedState, Collection, Annotation, DocumentFile, Startup, Tracing, EmojiCompat, ProfileInstaller, Graphics Path and related libraries</td><td>Activity 1.11.0, DocumentFile 1.1.0, others as pulled in by Compose</td><td>Apache License 2.0</td></tr>
+      <tr><td>AndroidX Media3 (ExoPlayer, Session, Common and related modules)</td><td>1.8.1</td><td>Apache License 2.0</td></tr>
+      <tr><td>AndroidX Room and SQLite support libraries</td><td>2.8.5</td><td>Apache License 2.0</td></tr>
+      <tr><td>Google Guava, ListenableFuture, Error Prone annotations, J2ObjC annotations</td><td>as pulled in by Media3</td><td>Apache License 2.0</td></tr>
+      <tr><td>JSpecify annotations</td><td>as pulled in by Media3</td><td>Apache License 2.0</td></tr>
+      <tr><td>Checker Framework qualifiers (checker-qual)</td><td>as pulled in by Guava</td><td>MIT License</td></tr>
+      <tr><td>SQLite (inside Android)</td><td>system version</td><td>Public domain</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>The full text of the <strong>Apache License 2.0</strong> is at <a href="https://www.apache.org/licenses/LICENSE-2.0">apache.org/licenses/LICENSE-2.0</a>. Under that licence these libraries are provided "as is", without warranties or conditions of any kind. Each project's copyright and notices belong to its authors:</p>
+  <ul>
+    <li>Android Open Source Project and Jetpack: <a href="https://source.android.com/">source.android.com</a>, <a href="https://developer.android.com/jetpack">developer.android.com/jetpack</a></li>
+    <li>Kotlin and kotlinx.coroutines (JetBrains): <a href="https://github.com/JetBrains/kotlin">github.com/JetBrains/kotlin</a>, <a href="https://github.com/Kotlin/kotlinx.coroutines">github.com/Kotlin/kotlinx.coroutines</a></li>
+    <li>Guava (Google): <a href="https://github.com/google/guava">github.com/google/guava</a></li>
+    <li>Checker Framework: <a href="https://checkerframework.org/">checkerframework.org</a></li>
+  </ul>
+  <p>The Eddalore name and icon, and the cover pictures in its Google Play screenshots, are original artwork. The sample audio used to make those screenshots is from a public-domain LibriVox recording and is not part of the app.</p>
+</main>
+</body>
+</html>
